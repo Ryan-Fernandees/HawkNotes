@@ -1,0 +1,131 @@
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height:  100vh;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 500px;
+  margin: auto;
+}
+#notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.note {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  width: 250px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.note-text {
+  font-size: 20px;
+  font-family: Itim;
+  overflow-wrap: break-word;
+}
+
+.note-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+#add-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#note-text {
+  resize: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 300px;
+}
+
+#add-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: Itim;
+  cursor: pointer;
+}
+.edit-btn {
+  background-color: #FFC107; /* Yellow */
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-right: 30px;
+  font-size: 20px;
+  font-family: Itim;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #a82f29; /* Red */
+  color: black;
+  font-size: 20px;
+  font-family: Itim;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.itim-regular {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Evita overflow */
+}
+
+.footer-text p {
+  margin: 0;
+  padding: 0 20px; /* Espaço interno para garantir que o texto não toque nas bordas */
+  white-space: nowrap; /* Evita quebra de linha desnecessária */
+}
+
+.footer-iconTop {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-iconTop a {
+  color: white;
+  font-size: 24px;
+}
+
+.footer-iconTop a:hover {
+  color: #ccc; /* Cor ao passar o mouse por cima */
+}
